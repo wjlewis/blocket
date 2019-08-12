@@ -1,0 +1,19 @@
+{
+  "name": "blocket",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A multiplayer WebSockets experiment",
+  "main": "server/src/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wjlewis/blocket.git"
+  },
+  "author": "William Lewis <william.lewis112358@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/wjlewis/blocket/issues"
+  },
+  "homepage": "https://github.com/wjlewis/blocket#readme"
+}
