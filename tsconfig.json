@@ -2,6 +2,13 @@
   "compilerOptions": {
     "module": "commonjs",
     "outDir": "build",
+    "lib": [
+      "es2015",
+      "es2017",
+      "dom"
+    ],
+    "esModuleInterop": true,
+    "jsx": "react"
   },
   "include": [
     "server/src/**/*"

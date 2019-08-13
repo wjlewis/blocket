@@ -1,6 +1,6 @@
 FROM node:8.9-alpine
 
-WORKDIR /usr/blocket
+WORKDIR /usr/blox
 
 ENV NODE_ENV=production
 
