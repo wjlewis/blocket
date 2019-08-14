@@ -5,7 +5,9 @@ import { Dispatch } from 'redux';
 import io from 'socket.io-client';
 import { State, World } from './state/reducers';
 import * as actions from './state/actions';
+import Header from './Header';
 import BloxWorld from './BloxWorld';
+import Footer from './Footer';
 
 export interface AppProps {
   isReady: boolean;
@@ -17,9 +19,13 @@ export interface AppProps {
 class App extends React.Component<AppProps> {
   render() {
     return (
-      this.props.isReady
-      ? <BloxWorld />
-      : <h1>connecting...</h1>
+      <div className="blox-app">
+        <Header />
+        {this.props.isReady
+        ? <BloxWorld />
+        : <h1>connecting...</h1>}
+        <Footer />
+      </div>
     );
   }
 

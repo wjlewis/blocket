@@ -1,0 +1,19 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__container {
+  width: 750px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo {
+  background-image: url('../../graphics/header-small.png');
+  width: 95px;
+  height: 64px;
+  margin: 5px;
+}

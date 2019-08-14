@@ -25,12 +25,23 @@ class BloxWorld extends React.Component<BloxWorldProps> {
     this.handleKeyDown = this.handleKeyDown.bind(this);
   }
 
+  /*
+   * We add the key listeners to the document instead of the (div) element so
+   * that the user does not need to focus the grid before moving their player
+   * around.
+   */
+  componentDidMount() {
+    document.addEventListener('keydown', this.handleKeyDown);
+  }
+
+  componentWillUnmount() {
+    document.removeEventListener('keydown', this.handleKeyDown);
+  }
+
   render() {
     const { rows, cols } = this.props;
     return (
-      <div tabIndex={0}
-           className={classNames(this.props.className, 'blox-world')}
-           onKeyDown={this.handleKeyDown}>
+      <div className={classNames(this.props.className, 'blox-world')}>
         <svg className="blox-world__grid" width={CELL_SIZE*cols} height={CELL_SIZE*rows} xmlns="http://www.w3.org/2000/svg">
           {this.renderPlayers()}
           {this.renderGridLines()}
