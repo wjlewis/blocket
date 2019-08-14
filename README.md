@@ -1,4 +1,4 @@
-![blox](header.png)
+![blox](graphics/header.png)
 
 ## Overview
 
