@@ -1,5 +1,9 @@
 ![blox](graphics/header.png)
 
+## [Try it online!](https://wjlewis-blox.herokuapp.com/)
+
+![A small demo](graphics/demo.gif)
+
 ## Overview
 
 This is an experimental attempt to elegantly manage the state of a multiplayer system using [redux](https://redux.js.org/) on the server side.
