@@ -1,0 +1,18 @@
+.blox-world {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+}
+
+.blox-world__grid {
+  background-color: #444;
+}
+
+.blox-world__player {
+  fill: red;
+}
+
+.blox-world__grid-line {
+  stroke: #fff;
+}
