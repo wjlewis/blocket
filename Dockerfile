@@ -5,7 +5,12 @@ WORKDIR /usr/blox
 ENV NODE_ENV=production
 
 COPY package*.json ./
-RUN ["npm", "install"]
+RUN apk add --no-cache --virtual .gyp \
+        python \
+        make \
+        g++ \
+    && npm install \
+    && apk del .gyp
 
 COPY . .
 RUN ["npm", "run", "build"]
