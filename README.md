@@ -4,6 +4,20 @@
 
 ![A small demo](graphics/demo.gif)
 
+## What is this?
+
+See [this](./ABOUT.md) short explanation
+
+## How do I use it?
+
+Either navigate [here](https://wjlewis-blox.herokuapp.com/) or run a server on your machine (see instructions for running with Docker below).
+Each browser window/tab that you open becomes associated with a new "player".
+Each player is represented by a colored box with its ID written inside of it.
+Your player will also have the text `(me!)` printed inside of it, to distinguish it from the other players.
+Use the arrow keys to move around, and don't worry about falling off the edge -- it's a torus!
+
+Try opening several different tabs, or playing around with it with a couple of friends!
+
 ## Overview
 
 This is an experimental attempt to elegantly manage the state of a multiplayer system using [redux](https://redux.js.org/) on the server side.
