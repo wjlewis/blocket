@@ -19,13 +19,13 @@ export interface AppProps {
 class App extends React.Component<AppProps> {
   render() {
     return (
-      <div className="blox-app">
-        <Header />
-        {this.props.isReady
-        ? <BloxWorld />
-        : <h1>connecting...</h1>}
-        <Footer />
-      </div>
+      this.props.isReady
+      ? <div className="blox-app">
+          <Header />
+            <BloxWorld />
+          <Footer />
+        </div>
+      : <h1>connecting...</h1>
     );
   }
 

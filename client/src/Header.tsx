@@ -8,7 +8,7 @@ class Header extends React.Component<HeaderProps> {
     return (
       <div className="header">
         <div className="header__container">
-          <a href="https://github.com/wjlewis/blox" target="_blank">About</a>
+          <a href="https://github.com/wjlewis/blox/blob/master/ABOUT.md" target="_blank">About</a>
           <div className="header__logo" />
           <a href="https://github.com/wjlewis/blox" target="_blank">Source</a>
         </div>
