@@ -9,8 +9,20 @@
   background-color: #444;
 }
 
-.blox-world__player {
-  fill: red;
+.blox-world__player-text {
+  color: #fff;
+  font-family: monospace;
+  font-size: 11pt;
+}
+
+.blox-world__player-id {
+  margin-top: 6px;
+  margin-bottom: 2px;
+  margin-left: 3px;
+}
+
+.blox-world__player-me {
+  margin-left: 3px;
 }
 
 .blox-world__grid-line {

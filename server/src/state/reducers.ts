@@ -27,8 +27,8 @@ export interface Grid {
   cols: number;
 }
 
-const GRID_ROWS = 20;
-const GRID_COLS = 30;
+const GRID_ROWS = 10;
+const GRID_COLS = 15;
 
 const initState: State = {
   players: List(),
